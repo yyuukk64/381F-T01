@@ -46,6 +46,7 @@ app.get('/api/weather',(req,res) => {
 app.listen(process.env.PORT || 8099);
 
 const setOptionPath = (city) => {
+  //htmi
 	options.path = "/data/2.5/weather?q=" + city.replace(/ /g,"+") + "&units=metric&APPID=" + APIKEY;
 }
 
